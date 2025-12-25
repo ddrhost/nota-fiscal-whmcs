@@ -62,9 +62,11 @@ A aba **Subitem** permite controlar com precisão a classificação do serviço 
 * [x] Reenvio sob demanda pelo Admin
 
 
+
 ## Referências
 
 - Portal de Consulta Pública (NFS-e Nacional): https://www.nfse.gov.br/consultaPublica
+
 
 
 ## Suporte

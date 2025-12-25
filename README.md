@@ -6,8 +6,6 @@ Este módulo integra o WHMCS à **API Nacional de NFS-e**, permitindo operar a r
 
 ![](docs/images/hero-nfse-whmcs.png)
 
----
-
 ## Principais Recursos
 
 * [x] Emissão de NFS-e diretamente no WHMCS via **API Nacional**

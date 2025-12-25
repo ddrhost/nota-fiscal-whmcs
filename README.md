@@ -55,8 +55,6 @@ Este módulo integra o WHMCS à **API Nacional de NFS-e**, permitindo operar a r
 * [x] Opção de criar **To-Do** no WHMCS quando ocorrer erro de emissão/cancelamento (configurável)
 * [x] Preserva dados relevantes da nota no banco mesmo em fluxos de erro (para retentativas e auditoria)
 
----
-
 ## Subitem — Diferencial do Módulo
 
 A aba **Subitem** permite controlar com precisão a classificação do serviço na NFS-e:
@@ -64,8 +62,6 @@ A aba **Subitem** permite controlar com precisão a classificação do serviço 
 * [x] **Domínios** com subitem exclusivo (Registro/Transferência/Renovação)
 * [x] Subitem por **Produto/Serviço** (catálogo do WHMCS)
 * [x] Herança do **Subitem Padrão** quando o campo estiver em branco
-
----
 
 ## E-mails
 

@@ -2,7 +2,7 @@
 
 > Automatize a emissão de **NFS-e** no WHMCS com integração direta ao **Ambiente Nacional** (Sefin Nacional/nfse.gov.br).
 
-Este módulo integra o WHMCS à **API Nacional de NFS-e**, permitindo operar a rotina completa de emissão de notas fiscais de serviço SEM DEPENDER DE TERCEIROS, SEM COBRANÇA POR NOTA FISCAL: emissão manual ou imediata, cancelamento, download do XML e reenvio de e-mail, com controles por **gateway**, **grupo de cliente** e mapeamento de **Subitem** por produto e por domínios.
+Este módulo integra o WHMCS à **API Nacional de NFS-e**, permitindo operar a rotina completa de emissão de notas fiscais de serviço **SEM DEPENDER DE TERCEIROS**, **SEM COBRANÇA POR NOTA FISCAL**: emissão manual ou imediata, cancelamento, download do XML e reenvio de e-mail, com controles por **gateway**, **grupo de cliente** e mapeamento de **Subitem** por produto e por domínios.
 
 ![](docs/images/hero-nfse-whmcs.png)
 

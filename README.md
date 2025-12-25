@@ -15,7 +15,7 @@ Este módulo integra o WHMCS à **API Nacional de NFS-e**, permitindo operar a r
 * [x] Emissão de NFS-e diretamente no WHMCS via **API Nacional**
 * [x] **Emissão manual** (ação sob demanda no Admin)
 * [x] **Emissão imediata** (após pagamento, conforme regras do módulo)
-* [x] **Cancelamento manual** de NFS-e (quando status = emitida)
+* [x] **Cancelamento** de NFS-e (quando status = emitida)
 * [x] **Download do XML** da NFS-e (Admin e ClientArea)
 * [x] **Reenvio de e-mail** da NFS-e pelo Admin
 * [x] **Painel de listagem** de notas emitidas no Admin (com busca e ordenação)

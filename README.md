@@ -6,8 +6,6 @@ Este módulo integra o WHMCS à **API Nacional de NFS-e**, permitindo operar a r
 
 ![](docs/images/hero-nfse-whmcs.png)
 
-> Este módulo é para emissão de **NFS-e (Nota Fiscal de Serviço Eletrônica)**. Não emite nota de produto (NF-e).
-
 ---
 
 ## Principais Recursos

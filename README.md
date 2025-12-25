@@ -21,10 +21,6 @@ Este módulo integra o WHMCS à **API Nacional de NFS-e**, permitindo operar a r
   * [x] Subitem por Produto/Serviço
   * [x] Subitem para **Domínios** (Registro/Transferência/Renovação)
 
----
-
-## Demais Recursos
-
 ### Controles e Regras Operacionais
 * [x] Restrições de emissão automática por **meios de pagamento (Gateways)**
 * [x] Restrições de emissão automática por **Grupos de Clientes**

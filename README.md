@@ -25,7 +25,7 @@ Este módulo integra o WHMCS à **API Nacional de NFS-e**, permitindo operar a r
 * [x] Restrições de emissão automática por **meios de pagamento (Gateways)**
 * [x] Restrições de emissão automática por **Grupos de Clientes**
 * [x] Mapeamento do **CPF/CNPJ do cliente** via Campo Personalizado (Custom Field)
-* [x] Subitem vazio → utiliza o **Subitem Padrão** definido nas configurações
+* [x] Subitem vazio utiliza o **Subitem Padrão** definido nas configurações
 
 ### Operação no Admin
 * [x] Botões de ação rápida na listagem:

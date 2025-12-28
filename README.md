@@ -36,7 +36,7 @@ Este módulo integra o WHMCS à **API Nacional de NFS-e**, permitindo operar a r
 * [x] Regras automáticas de habilitar/desabilitar botões por status da nota
 * [x] Ordenação e pesquisa (DataTables) para operação em volume
 
-![](imagens/nota1.png)
+![](nota1.jpg)
 
 ### Armazenamento e Recuperação do XML
 * [x] Suporte a XML retornado pela API em formato compactado (ex.: `nfseXmlGZipB64`)

@@ -71,6 +71,6 @@ A aba **Subitem** permite controlar com precisão a classificação do serviço 
 
 ## Suporte
 
-Para suporte e orientações de uso, utilize a central oficial:
+Para suporte e orientações de uso, acesse o nosso Site:
 
-- Central do Cliente: https://cliente.ddrhost.com.br/
+- DDR Host: https://www.ddrhost.com.br/

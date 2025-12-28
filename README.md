@@ -4,7 +4,7 @@
 
 Este módulo integra o WHMCS à **API Nacional de NFS-e**, permitindo operar a rotina completa de emissão de notas fiscais de serviço **SEM DEPENDER DE TERCEIROS**, **SEM COBRANÇA POR NOTA FISCAL**: emissão manual ou imediata, cancelamento, download do XML e reenvio de e-mail, com controles por **gateway**, **grupo de cliente** e mapeamento de **Subitem** por produto e por domínios.
 
-![](imagens/nota2.png)
+![](nota2.jpg)
 
 ## Principais Recursos
 

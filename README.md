@@ -69,8 +69,6 @@ A aba **Subitem** permite controlar com precisão a classificação do serviço 
 
 
 
-## Suporte
+## Compra
 
-Para suporte e orientações de uso, acesse o nosso Site:
-
-- DDR Host: https://www.ddrhost.com.br/
+- DDR Host: [https://cliente.ddrhost.com.br/cart.php?a=add&pid=281](https://cliente.ddrhost.com.br/cart.php?a=add&pid=281)

@@ -2,7 +2,7 @@
 
 > Automatize a emissão de **NFS-e** no WHMCS com integração direta ao **Ambiente Nacional** (Sefin Nacional/nfse.gov.br).
 
-Este módulo integra o WHMCS à **API Nacional de NFS-e**, permitindo operar a rotina completa de emissão de notas fiscais de serviço **SEM DEPENDER DE TERCEIROS**, **SEM COBRANÇA POR NOTA FISCAL**: emissão manual ou imediata, cancelamento, download do XML e reenvio de e-mail, com controles por **gateway**, **grupo de cliente** e mapeamento de **Subitem** por produto e por domínios.
+Este módulo integra o WHMCS à **API Nacional de NFS-e**, permitindo operar a rotina completa de emissão de notas fiscais de serviço **SEM DEPENDER DE TERCEIROS**, **SEM COBRANÇA POR NOTA FISCAL**: emissão manual ou imediata, cancelamento, download do XML e reenvio de e-mail, com controles por **gateway**, **grupo de cliente** e mapeamento de **Código de Serviço** por produto e por domínios.
 
 ![](nota2.jpg)
 
@@ -16,16 +16,16 @@ Este módulo integra o WHMCS à **API Nacional de NFS-e**, permitindo operar a r
 * [x] **Reenvio de e-mail** da NFS-e pelo Admin
 * [x] **Painel de listagem** de notas emitidas no Admin (com busca e ordenação)
 * [x] **Acompanhamento de status**: Emitida, Cancelada, Erro
-* [x] **Subitem** configurável:
-  * [x] Subitem padrão global
-  * [x] Subitem por Produto/Serviço
-  * [x] Subitem para **Domínios** (Registro/Transferência/Renovação)
+* [x] **Código de Serviço** configurável:
+  * [x] Código de Serviço padrão global
+  * [x] Código de Serviço por Produto/Serviço
+  * [x] Código de Serviço para **Domínios** (Registro/Transferência/Renovação)
 
 ### Controles e Regras Operacionais
 * [x] Restrições de emissão automática por **meios de pagamento (Gateways)**
 * [x] Restrições de emissão automática por **Grupos de Clientes**
 * [x] Mapeamento do **CPF/CNPJ do cliente** via Campo Personalizado (Custom Field)
-* [x] Subitem vazio utiliza o **Subitem Padrão** definido nas configurações
+* [x] Código de Serviço vazio utiliza o **Código de Serviço Padrão** definido nas configurações
 
 ### Operação no Admin
 * [x] Botões de ação rápida na listagem:
@@ -47,13 +47,13 @@ Este módulo integra o WHMCS à **API Nacional de NFS-e**, permitindo operar a r
 * [x] Opção de criar **To-Do** no WHMCS quando ocorrer erro de emissão/cancelamento (configurável)
 * [x] Preserva dados relevantes da nota no banco mesmo em fluxos de erro (para retentativas e auditoria)
 
-### Subitem — Diferencial do Módulo
+### Código de Serviço — Diferencial do Módulo
 
-A aba **Subitem** permite controlar com precisão a classificação do serviço na NFS-e:
+A aba **Código de Serviço** permite controlar com precisão a classificação do serviço na NFS-e:
 
-* [x] **Domínios** com subitem exclusivo (Registro/Transferência/Renovação)
-* [x] Subitem por **Produto/Serviço** (catálogo do WHMCS)
-* [x] Herança do **Subitem Padrão** quando o campo estiver em branco
+* [x] **Domínios** com Código de Serviço exclusivo (Registro/Transferência/Renovação)
+* [x] Código de Serviço por **Produto/Serviço** (catálogo do WHMCS)
+* [x] Herança do **Código de Serviço Padrão** quando o campo estiver em branco
 
 ### E-mails
 

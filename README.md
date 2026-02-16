@@ -49,9 +49,9 @@ index.php?m=Nfse
 ## Controles e Regras Operacionais
 
 - Restrição de emissão automática por Gateways
-- Restrição de emissão automática por Grupos de Clientes
+- Restrição de emissão automática por Cliente
 - Mapeamento de CPF/CNPJ via Campo Personalizado
-- Emissão imediata ou manual configurável
+- Emissão imediata, via CRON (Antecipado) ou manual configurável
 - Cancelamento protegido por status
 
 ---

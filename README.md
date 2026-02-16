@@ -34,7 +34,7 @@ Permite emissão manual ou automática, cancelamento, download do XML e reenvio 
 - Novos campos para personalização de tributos
 - Código otimizado, unificado e compatível com múltiplas versões de PHP/ionCube
 
-![](nota4.png)
+![](nota3.png)
 
 ---
 
@@ -56,7 +56,7 @@ index.php?m=Nfse
 - Layout dedicado compatível com tema Lagom
 - Layout dedicado compatível com tema Six
 
-![](nota3.jpg)
+![](nota4.png)
 
 ---
 

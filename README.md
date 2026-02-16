@@ -15,12 +15,24 @@ Permite emissão manual ou automática, cancelamento, download do XML e reenvio 
 - Emissão de NFS-e diretamente no WHMCS via API Nacional
 - Emissão manual (ação sob demanda no Admin)
 - Emissão automática após pagamento (conforme regras do módulo)
+- Emissão automática no momento da geração da fatura (via CRON configurável)
+- Personalização do modo de emissão por cliente (Manual / Após Pagamento / Ao Gerar Fatura)
 - Cancelamento de NFS-e (quando status = emitida)
 - Download do XML (Admin e ClientArea)
 - Reenvio de e-mail da NFS-e
 - Painel de listagem de notas emitidas no Admin (com busca e ordenação)
+- Relatório de notas fiscais emitidas e canceladas (PDF e CSV)
+- Relatório individual de NFS-e em PDF
 - Acompanhamento de status: Emitida, Cancelada, Erro
 - Página própria na Área do Cliente (`index.php?m=Nfse`)
+- Consulta pública da NFS-e via chave de acesso integrada ao Portal Nacional
+- Compatível com Simples Nacional, Lucro Presumido e Lucro Real
+- Compatível com Código 990101 (serviços sem incidência de ISS/ICMS)
+- Campo de Inscrição Municipal do Emissor
+- Campo de Código NBS
+- Campo de Código de Serviço Complementar (quando exigido pelo município)
+- Novos campos para personalização de tributos
+- Código otimizado, unificado e compatível com múltiplas versões de PHP/ionCube
 
 ![](nota1.jpg)
 
@@ -33,16 +45,18 @@ index.php?m=Nfse
 
 ### Funcionalidades
 
-- Listagem de todas as NFS-e do cliente
+- Listagem de todas as NFS-e do cliente (Emitidas e Canceladas)
 - Ordenação por Data, Valor e Status (DataTables)
 - Filtro por status (Emitida / Cancelada)
 - Download do XML
 - Reenvio de e-mail
-- Consulta pública via chave de acesso
+- Consulta pública via chave de acesso (integração direta com o Portal Nacional)
 - Visualização da fatura vinculada
 - Mensagens de sucesso e erro após ações
-- Compatível com tema Lagom
-- Compatível com tema Six
+- Layout dedicado compatível com tema Lagom
+- Layout dedicado compatível com tema Six
+
+![](nota3.jpg)
 
 ---
 
@@ -51,8 +65,10 @@ index.php?m=Nfse
 - Restrição de emissão automática por Gateways
 - Restrição de emissão automática por Cliente
 - Mapeamento de CPF/CNPJ via Campo Personalizado
-- Emissão imediata, via CRON (Antecipado) ou manual configurável
+- Emissão imediata, via CRON (Antecipado), na geração da fatura ou manual configurável
 - Cancelamento protegido por status
+- Tratamento aprimorado e detalhado de mensagens de erro
+- Registro automático de falhas para auditoria
 
 ---
 
@@ -83,6 +99,7 @@ A aba **Código de Serviço** permite controlar com precisão a classificação 
 - Permite personalização por tipo de item faturado
 - Evita classificação incorreta na NFS-e
 - Compatível com exigências municipais
+- Suporte a Código de Serviço Complementar quando exigido
 
 ---
 
@@ -96,6 +113,7 @@ A aba **Código de Serviço** permite controlar com precisão a classificação 
   - Reenviar E-mail
 - Regras automáticas de habilitar/desabilitar botões por status
 - Operação segura para volume elevado
+- Relatórios exportáveis para contador (PDF e CSV)
 
 ---
 
@@ -123,6 +141,7 @@ A aba **Código de Serviço** permite controlar com precisão a classificação 
 - Registro detalhado de erros
 - Criação automática de To-Do em caso de falha (configurável)
 - Histórico completo para auditoria
+- Registro estruturado de falhas HTTP e retorno da API Nacional
 
 ---
 

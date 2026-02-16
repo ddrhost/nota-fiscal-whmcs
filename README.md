@@ -1,74 +1,159 @@
 # Módulo de Notas Fiscais (NFS-e) para WHMCS via API Nacional
 
-> Automatize a emissão de **NFS-e** no WHMCS com integração direta ao **Ambiente Nacional** (Sefin Nacional/nfse.gov.br).
+> Automatize a emissão de **NFS-e** no WHMCS com integração direta ao **Ambiente Nacional** (Sefin Nacional / nfse.gov.br).
 
-Este módulo integra o WHMCS à **API Nacional de NFS-e**, permitindo operar a rotina completa de emissão de notas fiscais de serviço **SEM DEPENDER DE TERCEIROS**, **SEM COBRANÇA POR NOTA FISCAL**: emissão manual ou imediata, cancelamento, download do XML e reenvio de e-mail, com controles por **gateway**, **grupo de cliente** e mapeamento de **Código de Serviço** por produto e por domínios.
+Este módulo integra o WHMCS à **API Nacional de NFS-e**, permitindo operar a rotina completa de emissão de notas fiscais de serviço **SEM DEPENDER DE TERCEIROS** e **SEM COBRANÇA POR NOTA FISCAL**.
+
+Permite emissão manual ou automática, cancelamento, download do XML e reenvio de e-mail, com controles por gateway, grupo de cliente e mapeamento de Código de Serviço.
 
 ![](nota3.png)
 
+---
+
 ## Principais Recursos
 
-* [x] Emissão de NFS-e diretamente no WHMCS via **API Nacional**
-* [x] **Emissão manual** (ação sob demanda no Admin)
-* [x] **Emissão imediata** (após pagamento, conforme regras do módulo)
-* [x] **Cancelamento** de NFS-e (quando status = emitida)
-* [x] **Download do XML** da NFS-e (Admin e ClientArea)
-* [x] **Reenvio de e-mail** da NFS-e pelo Admin
-* [x] **Painel de listagem** de notas emitidas no Admin (com busca e ordenação)
-* [x] **Acompanhamento de status**: Emitida, Cancelada, Erro
-* [x] **Código de Serviço** configurável:
-  * [x] Código de Serviço padrão global
-  * [x] Código de Serviço por Produto/Serviço
-  * [x] Código de Serviço para **Domínios** (Registro/Transferência/Renovação)
-
-### Controles e Regras Operacionais
-* [x] Restrições de emissão automática por **meios de pagamento (Gateways)**
-* [x] Restrições de emissão automática por **Grupos de Clientes**
-* [x] Mapeamento do **CPF/CNPJ do cliente** via Campo Personalizado (Custom Field)
-* [x] Código de Serviço vazio utiliza o **Código de Serviço Padrão** definido nas configurações
-
-### Operação no Admin
-* [x] Botões de ação rápida na listagem:
-  * [x] Emitir NFS-e
-  * [x] Cancelar NFS-e
-  * [x] Baixar XML
-  * [x] Reenviar E-mail
-* [x] Regras automáticas de habilitar/desabilitar botões por status da nota
-* [x] Ordenação e pesquisa (DataTables) para operação em volume
+- Emissão de NFS-e diretamente no WHMCS via API Nacional
+- Emissão manual (ação sob demanda no Admin)
+- Emissão automática após pagamento (conforme regras do módulo)
+- Cancelamento de NFS-e (quando status = emitida)
+- Download do XML (Admin e ClientArea)
+- Reenvio de e-mail da NFS-e
+- Painel de listagem de notas emitidas no Admin (com busca e ordenação)
+- Acompanhamento de status: Emitida, Cancelada, Erro
+- Página própria na Área do Cliente (`index.php?m=Nfse`)
 
 ![](nota1.jpg)
 
-### Armazenamento e Recuperação do XML
-* [x] Suporte a XML retornado pela API em formato compactado (ex.: `nfseXmlGZipB64`)
-* [x] Extração automática do XML para download quando necessário
+---
 
-### Auditoria e Diagnóstico
-* [x] Registro de eventos em **Activity Log** (sucesso, falhas, cancelamento)
-* [x] Opção de criar **To-Do** no WHMCS quando ocorrer erro de emissão/cancelamento (configurável)
-* [x] Preserva dados relevantes da nota no banco mesmo em fluxos de erro (para retentativas e auditoria)
+## Área do Cliente (ClientArea)
 
-### Código de Serviço — Diferencial do Módulo
+O módulo possui página própria na área do cliente:
+index.php?m=Nfse
+
+### Funcionalidades
+
+- Listagem de todas as NFS-e do cliente
+- Ordenação por Data, Valor e Status (DataTables)
+- Filtro por status (Emitida / Cancelada)
+- Download do XML
+- Reenvio de e-mail
+- Consulta pública via chave de acesso
+- Visualização da fatura vinculada
+- Mensagens de sucesso e erro após ações
+- Compatível com tema Lagom
+- Compatível com tema Six
+
+---
+
+## Controles e Regras Operacionais
+
+- Restrição de emissão automática por Gateways
+- Restrição de emissão automática por Grupos de Clientes
+- Mapeamento de CPF/CNPJ via Campo Personalizado
+- Emissão imediata ou manual configurável
+- Cancelamento protegido por status
+
+---
+
+## Código de Serviço — Diferencial do Módulo
 
 A aba **Código de Serviço** permite controlar com precisão a classificação do serviço na NFS-e:
 
-* [x] **Domínios** com Código de Serviço exclusivo (Registro/Transferência/Renovação)
-* [x] Código de Serviço por **Produto/Serviço** (catálogo do WHMCS)
-* [x] Herança do **Código de Serviço Padrão** quando o campo estiver em branco
+### Configuração Global
 
-### E-mails
+- Código de Serviço padrão global
+- Código padrão aplicado automaticamente quando o campo estiver em branco
 
-* [x] Template “**Nota Fiscal**” (WHMCS Email Templates)
-* [x] Envio/reenvio com **chave de acesso** e link para consulta pública
-* [x] Reenvio sob demanda pelo Admin
+### Configuração por Produto/Serviço
 
+- Código de Serviço individual por Produto/Serviço
+- Herança automática do Código de Serviço padrão quando não definido
 
+### Configuração para Domínios
+
+- Código de Serviço exclusivo para:
+  - Registro de Domínio
+  - Transferência de Domínio
+  - Renovação de Domínio
+
+### Regras Inteligentes
+
+- Código vazio utiliza automaticamente o Código de Serviço padrão
+- Permite personalização por tipo de item faturado
+- Evita classificação incorreta na NFS-e
+- Compatível com exigências municipais
+
+---
+
+## Operação no Admin
+
+- Listagem com DataTables (busca e ordenação)
+- Botões de ação rápida:
+  - Emitir NFS-e
+  - Cancelar NFS-e
+  - Baixar XML
+  - Reenviar E-mail
+- Regras automáticas de habilitar/desabilitar botões por status
+- Operação segura para volume elevado
+
+---
+
+## Armazenamento e Recuperação do XML
+
+- Armazenamento do XML no banco de dados
+- Suporte a XML retornado compactado (`nfseXmlGZipB64`)
+- Extração automática do XML para download
+- Preserva dados relevantes mesmo em fluxos de erro
+
+---
+
+## Certificado Digital
+
+- Suporte a Certificado A1 (.pfx / .p12)
+- Tratamento de erro SSL
+- Compatível com PHP 7.2+
+- Debug avançado para diagnóstico
+
+---
+
+## Logs e Auditoria
+
+- Registro no Activity Log do WHMCS
+- Registro detalhado de erros
+- Criação automática de To-Do em caso de falha (configurável)
+- Histórico completo para auditoria
+
+---
+
+## E-mails
+
+- Template WHMCS: "Nota Fiscal"
+- Envio automático após emissão
+- Reenvio manual pelo Admin
+- Reenvio pelo Cliente (quando permitido)
+- Envio com chave de acesso e link para consulta pública
+
+---
+
+## Estrutura de Status
+
+| Status    | Comportamento |
+|-----------|--------------|
+| Emitida   | Permite XML, consulta pública e reenvio |
+| Cancelada | Apenas visualização |
+| Erro      | Registro mantido para auditoria |
+
+---
 
 ## Referências
 
-- Portal de Consulta Pública (NFS-e Nacional): https://www.nfse.gov.br/consultaPublica
+Portal Nacional de Consulta Pública:
+https://www.nfse.gov.br/consultaPublica
 
-
+---
 
 ## Compra
 
-- DDR Host: [https://cliente.ddrhost.com.br/cart.php?a=add&pid=281](https://cliente.ddrhost.com.br/cart.php?a=add&pid=281)
+DDR Host:
+https://cliente.ddrhost.com.br/cart.php?a=add&pid=281

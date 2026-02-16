@@ -34,7 +34,7 @@ Permite emissão manual ou automática, cancelamento, download do XML e reenvio 
 - Novos campos para personalização de tributos
 - Código otimizado, unificado e compatível com múltiplas versões de PHP/ionCube
 
-![](nota3.png)
+![](nota1.jpg)
 
 ---
 
